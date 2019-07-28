@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+
+<head>
+    {% comment %}
+    <meta http-equiv="refresh" content="1"> {% endcomment %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="{%static 'home/img/icon.ico'%}">
+    {%block style%}{%endblock%}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+
+<body>
+    <div class="HomeNav {%block MenuPosition%}{%endblock%}">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a href="" class="navbar-brand">
+                    <img src="{%static 'home/img/180x60.png'%}" alt="Tech RK Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#target"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="target">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="" class="nav-link link-nav">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about" class="nav-link link-nav">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/courses" class="nav-link link-nav">Courses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-nav">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link link-nav">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"><button class="LoginButton">Login / Sign up</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    {%block body%}{%endblock%}
+    <footer>
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-4 HrLine">
+                    <hr>
+                </div>
+                <div class="col-md-4 FooterImg">
+                   <a href=""><img src="{%static 'home/img/Footer.png'%}" alt="Tech RK Footer"></a> 
+                </div>
+                <div class="col-md-4 HrLine">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eos earum dolor
+                    laborum temporibus cum tempore quasi exercitationem
+                </div>
+                <div class="col-md-4 FooterSocialIcon">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p><i class="fas fa-map-marker-alt"></i> Berhampore, Murshidabad <br> West Bengal, India <br>742304</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 Vr">
+                    <div class="VrLine"></div>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-sm-12 d-flex justify-content-center">
+                    <table class="text-center">
+                        <tr>
+                            <th>
+                                CONTACT@TECHRK.IN
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                SUBSCRIBE
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center py-4">
+                    <h6>&copy;Copyright Tech RK 2019 | Designed By RK</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    {% block script %}
+    {% endblock script%}
+</body>
+</html>

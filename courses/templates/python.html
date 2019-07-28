@@ -1,0 +1,119 @@
+{% extends 'default.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{%static 'home/css/style.css'%}">
+<link rel="stylesheet" href="{%static 'home/css/course.css'%}">
+{% endblock style %}
+{% block body %}
+
+<div class="courseContent ">
+    <div class="container-fluid">
+        <div class="r-button-div d-sm-none py-2 text-center">
+            <button class="r-button" type="button" data-toggle="collapse" data-target="#courseSyllabus"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"><i
+                    class="fas fa-bars"></i></button>
+        </div>
+        <div class="row">
+
+            <div class="col-md-3 courseTree collapse navbar-collapse show" id="courseSyllabus">
+
+                <ul data-role="treeview">
+                    <li data-caption="Introduction" data-file="Introduction" data-collapsed="true">
+                        <ul>
+                            <li data-caption="1.1 History of Python" data-file="History" onclick='hireData(this)'></li>
+                            <li data-caption="1.2 Features and Applications" data-file="Features"
+                                onclick='hireData(this)'></li>
+                            <li data-caption="1.3 Python Environment Setup" data-file="Environment"
+                                onclick='hireData(this)'></li>
+                        </ul>
+                    </li>
+                    <li data-caption="HEHEHE" data-collapsed="true">
+                        <ul>
+                            <li data-caption="Documents"></li>
+                            <li data-caption="Projects" data-collapsed="true">
+                                <ul>
+                                    <li data-caption="Web"></li>
+                                    <li data-caption="Android"></li>
+                                    <li data-caption="Windows"></li>
+                                    <li data-caption="iOS"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-12 courseEmbedContent" id="data">
+                <h4 class="heading">Introduction of Python</h4>
+                <p class="paragraph">Python is a general-purpose interpreted, dynamic, object-oriented, and high-level
+                    programming
+                    language. This tutorial is designed for beginner as well as professional programmers who need to
+                    learn Python programming language from scratch.
+                    You should have a basic understanding of Computer Programming terminologies in order to learn
+                    Python. If you know any other programming language then it will be beneficial for you.
+                </p>
+                <h4 class="heading">Python 2.x vs. Python 3.x</h4>
+                <p class="paragraph">
+                    <li class="paragraph">print "hello" (Python 2.x). print("hello") (Python 3.x)</li>
+                    <li class="paragraph">Python 2.0 was first released in 2000. Python 3.0 was first released in 2008.
+                        Python 2.0 was
+                        first released in 2000. Python 3.0 was first released in 2008.</li>
+                    <li class="paragraph">In Python 3, strings are Unicode by default. In Python 2, strings are stored
+                        as ASCII by
+                        default–you have to add a “u” if you want to store strings as Unicode in Python 2.x. Unicode
+                        strings
+                        can store foreign language letters, Roman letters and numerals, symbols, emojis, etc.</li>
+                    <li class="paragraph">In Python 3.x syntax is simpler and easily understandable. Syntax of Python
+                        2.x was comparatively difficult to understand</li>
+                    <li class="paragraph">The new range() function introduced to perform iterations in Python 3.x . In
+                        Python 2, the xrange() is used for iterations..</li>
+                    <li class="paragraph">If you write code in Python 2.x a number without any digits after the decimal
+                        point,
+                        it rounds your calculation down to the floor. But Python 3.x, the expression 7 / 2 will return
+                        the expected result of 3.5</li>
+                    <li class="paragraph">Recently many developers are creating libraries which you can use only with
+                        Python 3.x , older libraries created for Python 2.x is not forward-compatible</li>
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
+{% block script %}
+<script>
+    var globeStaticFilesPath = "{%static 'course/python/page/'%}";
+
+    var data = "";
+
+
+    function hireData(para) {
+        data = globeStaticFilesPath + para.getAttribute("data-file") + ".html";
+        loadData();
+    }
+
+
+    function loadData() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("data").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", data, true)
+        xhttp.send();
+
+    }
+
+    $(document).ready(function () {
+        $(window).resize(function () {
+            var jadoo = document.getElementById('courseSyllabus');
+            jadoo.className = "col-md-3 courseTree collapse navbar-collapse show";
+        });
+    });
+</script>
+<script src="{%static 'home/js/metro.min.js'%}" type="text/javascript"></script>
+
+{% endblock script %}

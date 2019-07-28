@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Courses{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.SingleCourse {
+    height: 310px;
+    text-align: center;
+    width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: -3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.SingleCourse img {
+    height: 140px;
+}
+
+.SingleCourse h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.Language {
+    background: #81d742;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    float: left;
+}
+.lower-bar h6{
+    float: left;
+    color: gray;
+}
+.lower-bar span{
+    float: right;
+}
+.price-tag h6{
+    background: #11a15d;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}

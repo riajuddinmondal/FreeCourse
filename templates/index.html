@@ -1,0 +1,242 @@
+{%extends 'default.html'%}
+{%load static%}
+{%block style%}
+<link rel="stylesheet" href="{%static 'home/css/style.css'%}">
+<link rel="stylesheet" href="{%static 'home/css/animate.min.css'%}">
+{%endblock%}
+{%block title%}Tech RK - Learn to Code for FREE{%endblock%}
+{%block body%}
+<div class="container HomeFront">
+    <div class="row">
+        <div class="col-md-8 HomeFrontText animated slideInUp">
+            <p class="HomeFronTextPara">Check out our amazing FREE courses</p>
+            <h1>Learn to code for FREE</h1>
+            <p class="HomeFronTextPara">Courses are available in English, Hindi and Bengali</p>
+            <a href="#"><button class="HomeLoginButton mt-4 mb-3 bounce">login</button></a>
+        </div>
+        <div class="col-md-4 HomeFrontImage d-none d-sm-block">
+            <img src="{%static '/home/img/coding.png'%}" alt="DevImg">
+        </div>
+    </div>
+</div>
+<div class="container-fluid WhyUs py-5 my-4">
+    <h1 class="text-center pb-4">Why Us</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="WhyUsDiv">
+                <div class="WhyUsIcon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <h3>Best Tutor</h3>
+                <p>All of our faculty members are Developer cum Trainer for giving the best to the users.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="WhyUsDiv">
+                <div class="WhyUsIcon">
+                    <i class="fas fa-rupee-sign"></i>
+                </div>
+                <h3>Free Courses</h3>
+                <p>Most of our courses are available for free and one of best source to get free high quality education
+                    in programming.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="WhyUsDiv">
+                <div class="WhyUsIcon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Practical Training</h3>
+                <p>We emphasize more on hands-on coding experience.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="WhyUsDiv">
+                <div class="WhyUsIcon">
+                    <i class="far fa-comments"></i>
+                </div>
+                <h3>Discussion Forum</h3>
+                <p>There are many mentor and our faculty works 24/7 to solve your problem.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Portfolio">
+    <div class="container-fluid">
+        <h1 class="text-center my-5">Portfolio</h1>
+        <div class="row">
+            <div class="col-md-3 PortfolioImg"><img class="img-fluid" src="{%static 'home/img/demo1.jpg'%}" alt="">
+            </div>
+            <div class="col-md-3 PortfolioImg"><img class="img-fluid" src="{%static 'home/img/demo1.jpg'%}" alt="">
+            </div>
+            <div class="col-md-3 PortfolioImg"><img class="img-fluid" src="{%static 'home/img/demo1.jpg'%}" alt="">
+            </div>
+            <div class="col-md-3 PortfolioImg"><img class="img-fluid" src="{%static 'home/img/demo1.jpg'%}" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="OurServices">
+    <div class="container">
+        <h1 class="text-center mb-5">Our Services</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="OurServicesDiv">
+                    <div class="OurServicesIcon">
+                        <img src="{%static 'home/img/Graphic-Design.png'%}" alt="">
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>We emphasize more on hands-on coding experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="OurServicesDiv">
+                    <div class="OurServicesIcon">
+                        <img src="{%static 'home/img/Software-Development.png'%}" alt="">
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>We emphasize more on hands-on coding experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="OurServicesDiv">
+                    <div class="OurServicesIcon">
+                        <img src="{%static 'home/img/SEO-Service.png'%}" alt="">
+                    </div>
+                    <h3>SEO Service</h3>
+                    <p>We emphasize more on hands-on coding experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="OurServicesDiv">
+                    <div class="OurServicesIcon">
+                        <img src="{%static 'home/img/Mobile.png'%}" alt="">
+                    </div>
+                    <h3>iOS/Android Development</h3>
+                    <p>We emphasize more on hands-on coding experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="OurServicesDiv">
+                    <div class="OurServicesIcon">
+                        <img src="{%static 'home/img/Web-Development.png'%}" alt="">
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>We emphasize more on hands-on coding experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="OurServicesDiv">
+                    <div class="OurServicesIcon">
+                        <img src="{%static 'home/img/Web-Design.png'%}" alt="">
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>We emphasize more on hands-on coding experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="MeetTheTeam my-5 py-5">
+    <div class="container">
+        <h1 class="text-center mb-5">Meet The Team</h1>
+        <div class="row">
+            <div class="col-xl-4 col-lg-5 TeamMemberOutter pb-2">
+                <div class="TeamMember" id="TeamMemberId1">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="TeamMemberName">
+                                <h4>Rakib Hossain</h4>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="TeamMemberImg">
+                                <img src="{%static 'home/img/TeamMember/rk.jpg'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3 text-center">
+                        <p>Money won’t work for you until you work for money.
+                            Work For Money Until Your Money Work For You </p>
+                    </div>
+                    <div class="TeamMemberSocial d-none" id="TeamMemberIcon1">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 TeamMemberOutter pb-2">
+                <div class="TeamMember" id="TeamMemberId2">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="TeamMemberName">
+                                <h4>Rakib Hossain</h4>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="TeamMemberImg">
+                                <img src="{%static 'home/img/TeamMember/rk.jpg'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3 text-center">
+                        <p>Money won’t work for you until you work for money.
+                            Work For Money Until Your Money Work For You </p>
+                    </div>
+                    <div class="TeamMemberSocial d-none" id="TeamMemberIcon2">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 TeamMemberOutter pb-2">
+                <div class="TeamMember" id="TeamMemberId3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="TeamMemberName">
+                                <h4>Rakib Hossain</h4>
+                                <p>Developer</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="TeamMemberImg">
+                                <img src="{%static 'home/img/TeamMember/rk.jpg'%}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-3 text-center">
+                        <p>Money won’t work for you until you work for money.
+                            Work For Money Until Your Money Work For You </p>
+                    </div>
+                    <div class="TeamMemberSocial d-none" id="TeamMemberIcon3">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Project text-center my-5 py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Would You Like To Start A Project With Us?</h3>
+            </div>
+            <div class="col-md-4"><a href="tel:8670668808"><button class="CallMeButton">8670668808</button></a></div>
+        </div>
+    </div>
+</div>
+{%endblock%}
+{% block script %}
+    <script src="{%static 'home/js/event.js'%}" type="text/javascript"></script>
+{% endblock script%}

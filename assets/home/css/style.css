@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background: #f4f4f4; */
+}
+
+.HomeNav {
+    background: #f4f4f7
+}
+
+.navbar-brand img {
+    height: 70%;
+    width: 70%;
+}
+
+.navbar i {
+    color: black;
+}
+
+.LoginButton {
+    background: #81d742;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.LoginButton:hover {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 28px;
+    padding-left: 28px;
+    background: transparent;
+    border: 2px solid #81d742;
+    color: #81d742;
+    ;
+}
+
+.navbar-nav li .link-nav {
+    padding-top: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-nav li a:link {
+    color: green;
+
+}
+
+.navbar-nav li a:hover {
+    color: green;
+}
+
+.navbar-nav li a:visited {
+    color: green;
+}
+
+.navbar-nav li a:active {
+    color: green;
+}
+
+/* ----End of nav bar style---- */
+.HomeFront {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.HomeFrontImage img {
+    padding-left: 10px;
+    /* padding-right: 0px; */
+
+}
+
+.HomeFrontText {
+    margin: auto;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 600;
+}
+
+.HomeFronTextPara {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+
+}
+
+.HomeLoginButton {
+    background: #81d742;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+.HomeLoginButton:hover {
+    padding-left: 53px;
+    padding-right: 53px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: transparent;
+    border: 2px solid #81d742;
+    color: #81d742;
+    ;
+}
+
+
+/* ----End of home banner---- */
+.WhyUs {
+    background: #f4f4f7;
+    height: auto;
+}
+
+.WhyUsDiv {
+    text-align: center;
+    padding: 20px;
+}
+
+.WhyUsIcon {
+    background: #2980b9;
+    color: #81d742;
+    font-size: 50px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.WhyUsIcon i {
+    line-height: 150px;
+}
+
+.WhyUsIcon:hover {
+    background: #81d742;
+    color: white;
+    transition-duration: .5s;
+    -webkit-box-shadow: -5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.WhyUsDiv h3 {
+    padding-top: 10px;
+}
+
+.WhyUsDiv p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ----End of WhyUs---- */
+.PortfolioImg {
+    padding: 0px !important;
+}
+
+/* ----End of Portfolio---- */
+
+.OurServices {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.OurServicesDiv {
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.OurServicesIcon img {
+    width: 150px;
+    height: 150px;
+
+}
+
+/* ----End of Our Services---- */
+.MeetTheTeam {
+    background: #f4f4f7;
+}
+
+.TeamMemberOutter {
+   padding: 5px !important;
+}
+
+.TeamMember {
+    color: white;
+    background: #2980b9;
+    height: 350px;
+    width: 350px;
+    padding: 30px;
+    border-radius: 55px 55px 55px 0px;
+}
+
+.TeamMemberImg img {
+    height: 130px;
+    width: 130px;
+    border-radius: 0 35px 0 0 !important;
+}
+
+.TeamMemberSocial {
+    margin-top: 15px;
+    background: #2980b9;
+    height: 55px;
+    width: 180px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.TeamMemberSocial a:hover {
+    color: white;
+}
+
+.TeamMemberSocial a:active {
+    color: white;
+}
+
+.TeamMemberSocial a:visited {
+    color: white;
+}
+
+.TeamMemberSocial a:link {
+    color: white;
+}
+
+.TeamMemberSocial a {
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+}
+
+.TeamMemberName h4 {
+    font-size: 18px;
+}
+
+.TeamMemberName p {
+    font-size: 14px !important;
+}
+
+.TeamMember:hover {
+    color: black;
+    transition-duration: .5s;
+    background: #81d742;
+    -webkit-box-shadow: -5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -5px 5px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ----End of Meet The Team---- */
+.Project {
+    background: #4064d7;
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.CallMeButton {
+    border: none;
+    background: #81d742;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 25px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.CallMeButton:hover {
+    border: 2px solid #81d742;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: #81d742;
+    background: transparent;
+}
+
+/* ----End of Project---- */
+.FooterImg {
+    text-align: center;
+}
+.FooterSocialIcon{
+    font-size: 40px;
+    text-align: center;  
+}
+.FooterSocialIcon a{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #4064d7;
+}
+.FooterSocialIcon a:hover{
+    color: #81d742;
+}
+
+.HrLine hr {
+    height: 3px;
+    border: none;
+    color: #4064d7;
+    background-color: #4064d7;
+}
+.Vr{
+    display: flex;
+    justify-content: center;
+}
+.VrLine{
+    border-left: 4px solid #4064d7;
+    height: 50px;
+}
+footer th{
+    border: 4px solid #4064d7;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* ----End of Footer---- */
